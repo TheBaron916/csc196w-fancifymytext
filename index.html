@@ -3,15 +3,25 @@
 	<head>
 		<title>Fancify Shamcify</title>
 
-		<!-- link to your script file here -->
+		<script type="text/javascript" src="fancifymytext.js"></script>
 		
 	</head>
 
 	<body>
 		<h1>Fancify my Text</h1>
-		
-
-		<!-- Your UI controls go here -->
+		<fieldset>
+			<textarea rows=4 columns=30 id="mainTextArea">This is a sentence. Also, this is another sentence.</textarea>
+		</fieldset>
+		<fieldset>
+			<button id="biggerButton" onclick="biggerFunction()">Bigger!</button>
+			<button id="mooButton" onclick="mooFunction()">Moo</button>
+			<div>
+				<input type="radio" id="FancyShmancy" onclick="fancifyFunction()" onchange="deselectFunction()"></input>
+				<label for="FancyShmancy">FancyShmancy</label>
+				<input type="radio" id="BoringBetty" onclick="plainFunction()"></input>
+				<label for="BoringBetty">BoringBetty</label>
+			</div>
+		</fieldset>
 		
 	</body>
 </html>
